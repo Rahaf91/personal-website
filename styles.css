@@ -1,17 +1,19 @@
 * {
   box-sizing: border-box;
 }
+
 body {
-  background-color: #ffffff46;
+  background-color: #eaddd7;
   max-width: 1200px;
   margin: auto;
   padding: 0;
   margin-top: 10px;
-
   box-shadow: 0px 0px 10px black;
+  color: #000;
 }
 main {
   background-color: #eaddd7;
+  display: none;
 }
 
 h1 {
@@ -21,8 +23,12 @@ h1 {
 }
 h2 {
   text-align: center;
+  background-color: #eaddd7;
 }
-
+h2:hover {
+  border-radius: 50%;
+  background-color: #cc8b8b;
+}
 /*nav {
     text-align: center;
 }
@@ -38,136 +44,139 @@ nav li {
 
 }
 */
-/*...........first section styling...........*/
-.first-sec {
+header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  max-width: 1000px;
-  margin: auto;
-  padding: 0;
-  /* border-top: 2px solid #a5d8ffb4;
-  border-bottom: 2px solid #a5d8ffb4;
-   position: fixed;
-  width: 100%;*/
+  padding: 20px;
+  background-color: #cc8b8b;
 }
 
-.first-sec p {
-  color: #cc8b8b;
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-nav ul {
-  color: #ffffff;
+.nav {
   display: flex;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  gap: 50px;
-  font-family: "Marck Script", cursive;
-  font-size: 25px;
+}
+
+.nav li {
+  margin-right: 20px;
 }
 nav li:hover {
-  color: #cc8b8b;
+  color: #dfd3d3;
   cursor: pointer;
 }
-.first-sec p {
+.active {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /*....................Second section styling...............................*/
 
-.second-sec {
-  display: flex;
-  justify-content: space-around;
+.image_container {
+  display: grid;
+  justify-content: center;
   align-items: center;
-  position: relative;
 }
-.second-sec img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+.image_container img {
+  width: 100%;
+  border-radius: 10%;
 }
-.second-sec p {
-  font-size: 150%;
+.image_container figcaption {
   font-family: "Marck Script", cursive;
+  color: #cc8b8b;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.data {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.know_me_btn {
+  margin-bottom: 40px;
+  background-color: #cc8b8b;
+  border-radius: 10px;
+  color: rgb(216, 210, 210);
+  border: 1px solid rgb(218, 207, 207);
+  cursor: pointer;
+}
+
+.know_me_btn:hover {
+  color: #cc8b8b;
+  background-color: rgb(255, 255, 255);
+  border-left: 3px solid rgb(109, 1, 42);
+  border-right: 3px solid rgb(109, 1, 42);
+}
+
+.container {
+  display: grid;
+  background-color: #cc8b8ba9;
+  margin: 10px 20px 10px;
+  box-shadow: 2px 3px 4px rgb(59, 44, 56);
+  border-radius: 30px;
+}
+
+h3,
+p {
+  margin-left: 10px;
+}
+
+.portfolio {
+  background-color: #cc8b8ba9;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  border-radius: 30px;
+  margin: 10px 20px 10px;
+  padding: 0;
+  box-shadow: 2px 3px 4px rgb(59, 44, 56);
+}
+.portfolio h2 {
+  grid-column: 1 / -1;
+}
+
+.Project {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #eaddd7;
+  margin: 0 10px 50px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.Project:hover {
+  border-radius: 20px;
+  font-size: larger;
   color: #cc8b8b;
 }
 
-/*hr {
-  position: absolute;
-  bottom: -50px;
-  width: 100px;
-  height: 3px;
-  background-color: rgb(250, 94, 172);
-}*/
-/*.................About me styling................................*/
-
-.about-me {
-  display: grid;
-  grid-template-columns: 50px 1fr 1fr;
-  width: 100%;
-  height: 600px;
-}
-
-.content {
+footer {
+  padding: 10px;
   background-color: #cc8b8ba9;
-  grid-column-start: 2;
-  margin-top: 50px;
-  border-radius: 30px;
-}
-/*............Resume styling...................*/
-.resume {
-  display: grid;
-  grid-template-columns: 1fr 1fr 50px;
-  width: 100%;
-  height: 600px;
-}
-.cv {
-  background-color: #cc8b8ba9;
-  margin-top: 50px;
-  grid-column-start: 2;
-  border-radius: 30px;
-}
-/*........quote..........*/
-.quote {
-  color: #fffefe41;
   text-align: center;
-  font-size: 30px;
 }
-.quote:hover {
-  color: rgb(112, 114, 114);
-}
-/*............Portfolio styling...................*/
-.portfolio {
-  background-color: #cc8b8ba9;
-  border-radius: 30px;
-  border: 2px solid rgb(214, 206, 206);
-  max-width: 1000px;
-  margin: auto;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  height: 400px;
-  margin-top: 50px;
+.finde_me ul {
+  list-style: none;
+  padding: 10px;
+  text-align: center;
 }
 
-.firstpro,
-.secondpro,
-.thirdpro,
-.fourthpro {
-  margin-top: 40px;
-  width: 200px;
-  height: 100px;
+.finde_me ul li {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
 }
 
-.firstpro,
-.secondpro {
-  grid-row-start: 1;
-  background-color: rgba(140, 107, 148, 0.151);
+.finde_me ul li:hover {
+  background-color: #eaddd7;
 }
-.thirdpro,
-.fourthpro {
-  grid-row-start: 2;
-  background-color: rgba(157, 190, 190, 0.37);
+
+.finde_me a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*............Desktop...................*/
+
+@media only screen and (min-width: 1200px) {
 }

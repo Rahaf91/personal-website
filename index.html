@@ -11,69 +11,75 @@
       href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
       rel="stylesheet"
     />
+    <script src="index.js" defer></script>
   </head>
 
   <body>
-    <main>
-      <section class="first-sec">
-        <p>Rahaf Sekny</p>
-        <nav>
-          <ul class="my-ul">
-            <li>Home</li>
-            <li>
+    <header>
+      <p>Rahaf Sekny</p>
+      <nav>
+        <ul class="nav">
+          <!--I should add the hamburger menu on mobile -->
+          <a href="index.html" class="active"><li>Home</li></a>
+          <a
+            ><li>
               <!--<a href="#contact">Contact </a>-->
               Contact
-            </li>
-            <li>Biography</li>
-          </ul>
-        </nav>
-      </section>
+            </li></a
+          >
+          <a> <li>Biography</li></a>
+        </ul>
+      </nav>
+    </header>
+    <h1>Web Developer</h1>
 
-      <h1>Web Developer</h1>
-      <section class="second-sec">
-        <figure>
-          <img
-            src="https://source.unsplash.com/random/400x300?fruit"
-            alt="myphoto"
-          />
-        </figure>
-        <p>The Keyword is the Passion for Coding</p>
-      </section>
+    <section class="image_container">
+      <figure>
+        <img
+          src="images/gazzola_ausschnitt_off_1.jpg "
+          alt="myphoto"
+          width="250px"
+          height="200px"
+        />
+      </figure>
+      <figcaption>The Keyword is the Passion for Coding</figcaption>
+    </section>
+    <section class="data">
+      <p><b>Name:</b> Rahaf Rahaf</p>
+      <p><b>Email:</b> rahaf@rahaf.com</p>
+      <button type="button" data-js="show_content" class="know_me_btn">
+        Know Me More
+      </button>
+    </section>
 
-      <!--<section id="biography">
-      
-        <figcaption>it was taken in .... date....</figcaption>
-     
-    </section>-->
-      <section class="about-me">
-        <div class="content">
-          <h2>About Me</h2>
-          <p>
-            I am a mom of two beautiful children.Life as full time mom is not
-            easy and I felt sometimes weakness, but I believe that we should not
-            stop learning somthing new because chasing our dreams never ends.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
-            suscipit sint autem maxime eum labore officia totam aspernatur,
-            voluptatibus facere rem provident hic itaque dolorem consequuntur
-            sapiente nulla, enim esse!
-          </p>
-          <h2>Interests</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Repudiandae, molestiae optio sed vitae quam ducimus esse iste quia
-            delectus iusto blanditiis eos? Ipsam ut reiciendis veniam nesciunt
-            debitis voluptates dolore.
-          </p>
-          <ul>
-            <li>Reading</li>
-            <li>Learning Languages</li>
-            <li>Coding</li>
-            <li>Sport</li>
-          </ul>
-        </div>
+    <main data-js="content">
+      <section class="container">
+        <h2>About Me</h2>
+        <p>
+          I am a mom of two beautiful children.Life as full time mom is not easy
+          and I felt sometimes weakness, but I believe that we should not stop
+          learning somthing new because chasing our dreams never ends. Lorem
+          ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+          suscipit sint autem maxime eum labore officia totam aspernatur,
+          voluptatibus facere rem provident hic itaque dolorem consequuntur
+          sapiente nulla, enim esse!
+        </p>
+        <h2>Interests</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
+          molestiae optio sed vitae quam ducimus esse iste quia delectus iusto
+          blanditiis eos? Ipsam ut reiciendis veniam nesciunt debitis voluptates
+          dolore.
+        </p>
+        <ul>
+          <li>Reading</li>
+          <li>Learning Languages</li>
+          <li>Coding</li>
+          <li>Sport</li>
+        </ul>
+        <div class="arrow"></div>
       </section>
-
-      <section class="resume">
+      <section class="container">
         <div class="cv">
           <h2>Resume</h2>
           <h3>Certificats</h3>
@@ -81,8 +87,8 @@
           <p>Master in Public Administration - 2018</p>
           <p>Bachlor in English Languge and Literature - 2013</p>
           <h3>Experience</h3>
-          <p>English Teacher/2012-2019</p>
-          <p>Volunteer Translator/2015-2018</p>
+          <p>English Teacher 2012-2019</p>
+          <p>Volunteer Translator 2015-2018</p>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
             veritatis, eveniet quidem, sequi vero reiciendis numquam labore odit
@@ -91,41 +97,33 @@
           </p>
         </div>
       </section>
-      <p class="quote">
-        “Ambition is like love, impatient both of delays and rivals.” – Sir John
-        Denham
-      </p>
 
-      <h2>Portfolio</h2>
       <section class="portfolio">
-        <div class="firstpro"></div>
-        <div class="secondpro"></div>
-        <div class="thirdpro"></div>
-        <div class="fourthpro"></div>
+        <!--Later i want here to change it maybe to a slider that shows 
+        my projects or interactive cards which show more details on click ...MAYBE I WILL ADD SOMETHING COMPLETELY DIFFERENT-->
+        <h2>Portfolio</h2>
+        <div class="Project one">First Project</div>
+        <div class="Project two">Second Project</div>
+        <div class="Project three">Third Project</div>
+        <div class="Project four">Fourth Project</div>
       </section>
-
-      <section class="resuorces">
-        <h2>Resources</h2>
-        <ul>
-          <li><a href="https://www.w3schools.com/"> W3School</a></li>
-          <li><a href="https://codepen.io/">Codepen</a></li>
-          <li><a href="https://developer.mozilla.org/">MDN</a></li>
-        </ul>
-      </section>
-
-      <section class="find-me">
+      <section class="container finde_me">
         <h2>Finde Me</h2>
         <ul>
-          <li><a href="https://www.w3schools.com/">LinkedIn</a></li>
-          <li><a href="https://codepen.io/">CodePen</a></li>
-          <li><a href="https://www.w3schools.com/">GitHub</a></li>
+          <li>
+            <a href="https://www.w3schools.com/" target="_blank">LinkedIn</a>
+          </li>
+          <li><a href="https://codepen.io/" target="_blank">CodePen</a></li>
+          <li>
+            <a href="https://www.w3schools.com/" target="_blank">GitHub</a>
+          </li>
         </ul>
       </section>
-      <hr style="width: 50%" />
-
-      <footer>
-        <p>&COPY; 2024 My Personal Website</p>
-      </footer>
+      <br />
     </main>
+
+    <footer>
+      <p>&COPY; 2024 My Personal Website</p>
+    </footer>
   </body>
 </html>
