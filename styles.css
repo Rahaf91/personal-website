@@ -155,23 +155,23 @@ footer {
   background-color: #cc8b8ba9;
   text-align: center;
 }
-.finde_me ul {
+.find_me ul {
   list-style: none;
   padding: 10px;
   text-align: center;
 }
 
-.finde_me ul li {
+.find_me ul li {
   border-radius: 20px;
   padding: 10px;
   margin: 10px;
 }
 
-.finde_me ul li:hover {
+.find_me ul li:hover {
   background-color: #eaddd7;
 }
 
-.finde_me a {
+.find_me a {
   text-decoration: none;
   color: #000;
 }
